@@ -10,7 +10,7 @@ let webpack = require("webpack");
 describe("Options", function() {
 
   let outputDir = path.resolve(__dirname, "./output/options");
-  let babelLoader = path.resolve(__dirname, "../");
+  let babelLoader = path.resolve(__dirname, "../src");
   let globalConfig = {
     entry: "./test/fixtures/basic.js",
     output: {

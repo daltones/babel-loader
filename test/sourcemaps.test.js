@@ -10,7 +10,7 @@ let webpack = require("webpack");
 describe("Sourcemaps", function() {
 
   let outputDir = path.resolve(__dirname, "./output/sourcemaps");
-  let babelLoader = path.resolve(__dirname, "../");
+  let babelLoader = path.resolve(__dirname, "../src");
   let globalConfig = {
     entry: "./test/fixtures/basic.js",
     output: {

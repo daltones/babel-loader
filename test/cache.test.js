@@ -12,7 +12,7 @@ describe("Filesystem Cache", function() {
     "../node_modules/.cache/babel-loader");
   let cacheDir = path.resolve(__dirname, "output/cache/cachefiles");
   let outputDir = path.resolve(__dirname, "./output/cache/");
-  let babelLoader = path.resolve(__dirname, "../");
+  let babelLoader = path.resolve(__dirname, "../src");
 
   let globalConfig = {
     entry: "./test/fixtures/basic.js",

@@ -45,6 +45,7 @@ let transpile = function(source, options) {
         hideStack = true;
       } else if (error instanceof TypeError) {
         message = message.replace(STRIP_FILENAME_RE, "");
+        console.log('test');
         hideStack = true;
       }
       throw new BabelLoaderError(

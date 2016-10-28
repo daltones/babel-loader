@@ -41,7 +41,7 @@
     "preversion": "npm test",
     "prepublish": "npm run build",
     "test": "npm run lint && npm run build && npm run test-only",
-    "test-ci": "cross-env BABEL_ENV=test npm run build && npm run test-only -- --coverage",
+    "test-ci": "rimraf lib && npm run test-only -- --coverage",
     "test-only": "jest"
   },
   "repository": {
@@ -65,13 +65,5 @@
   "jest": {
     "testPathDirs": ["test/"],
     "coverageDirectory": "./coverage/"
-  },
-  "nyc": {
-    "all": true,
-    "include": [
-      "src/**/*.js"
-    ],
-    "sourceMap": false,
-    "instrument": false
   }
 }

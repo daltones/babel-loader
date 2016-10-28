@@ -2,9 +2,9 @@
 
 let fs = require("fs");
 let path = require("path");
-let resolveRc = require("../lib/resolve-rc.js");
-let exists = require("../lib/helpers/exists.js");
-let read = require("../lib/helpers/read.js");
+let resolveRc = require("../src/resolve-rc.js");
+let exists = require("../src/helpers/exists.js");
+let read = require("../src/helpers/read.js");
 
 describe("ResolveRc", function() {
 
